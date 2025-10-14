@@ -31,18 +31,29 @@ public class Pizza : MonoBehaviour
             Rebound(other);
             hasHit = true;
         }
+
         if (other.gameObject.CompareTag("Block"))
         {
-            //AddIngredient(other);
-            //HandleBonus(other);
+            Ingredient ingredient = other.gameObject.GetComponent<Ingredient>();
+            if (ingredient != null)
+            {
+                AddIngredient(ingredient.ingredientName);
+                ingredient.HandleBonus();
+            }
+
             Destroy(other.gameObject);
             hasHit = true;
         }
+
         if (other.gameObject.CompareTag("Lose"))
         {
             GameManager.Instance.life -= 1;
             StartCoroutine(RespawnPizza(1f));
         }
+    }
+    void AddIngredient(string ingredientName)
+    {
+        
     }
     void ResetPosition()
     {
@@ -61,15 +72,17 @@ public class Pizza : MonoBehaviour
     }
     private IEnumerator RespawnPizza(float delay)
     {
-        GetComponent<SpriteRenderer>().enabled = false;
-        GetComponent<Collider2D>().enabled = false;
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        Collider2D col = GetComponent<Collider2D>();
+
+        if (sr != null) sr.enabled = false;
+        if (col != null) col.enabled = false;
 
         yield return new WaitForSeconds(delay);
 
         ResetPosition();
 
-        GetComponent<SpriteRenderer>().enabled = true;
-        GetComponent<Collider2D>().enabled = true;
+        if (sr != null) sr.enabled = true;
+        if (col != null) col.enabled = true;
     }
-
 }

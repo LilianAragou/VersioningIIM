@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 7213442966141566848}
   - component: {fileID: 7356509609084808155}
   - component: {fileID: 7708780993182228952}
-  m_Layer: 0
-  m_Name: Bonus
+  - component: {fileID: -6419528729950035451}
+  - component: {fileID: -5407249406353420379}
+  m_Layer: 6
+  m_Name: Malus3
   m_TagString: Bonus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.6784314, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -118,7 +120,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -134,3 +136,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-6419528729950035451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088108970550581221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 082bbacf3cd01504fb019236a48e6234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: -3
+--- !u!114 &-5407249406353420379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088108970550581221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955de5d776fb50b45b15c7525b79d02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallSpeed: 3
+  destroyY: -10
