@@ -53,7 +53,12 @@ public class Pizza : MonoBehaviour
     }
     void AddIngredient(string ingredientName)
     {
-        
+        Transform child = transform.Find(ingredientName);
+
+        if (child != null)
+        {
+            child.gameObject.SetActive(true);
+        }
     }
     void ResetPosition()
     {

@@ -16,6 +16,17 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
     }
+    public void GameOver(bool win)
+    {
+        if (win)
+        {
+            Debug.Log("You Win!");
+        }
+        else
+        {
+            Debug.Log("Game Over!");
+        }
+    }
 
     void Start()
     {
@@ -24,6 +35,9 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        if (life <= 0)
+        {
+            GameOver(false);
+        }
     }
 }
