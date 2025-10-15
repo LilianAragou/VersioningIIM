@@ -6,9 +6,12 @@ public class Pizza : MonoBehaviour
     private Vector2 direction;
     public float startSpeed;
     public float speed;
+    public float bonusSpeed;
     public Transform spawnPoint;
     private bool hasHit = false;
     public GameObject pizzaObject;
+    public float transperceTimer = 0f;
+    public float speedTimer = 0f;
     void Start()
     {
         ResetPosition();
@@ -21,14 +24,33 @@ public class Pizza : MonoBehaviour
         }
         else
         {
-            transform.Translate(direction * speed * Time.deltaTime);
+            if (speedTimer > 0)
+            {
+                transform.Translate(direction * (speed + bonusSpeed) * Time.deltaTime);
+            }
+            else
+            {
+                transform.Translate(direction * speed * Time.deltaTime);
+            }
+        }
+        if (transperceTimer > 0)
+        {
+            transperceTimer -= Time.deltaTime;
+        }
+        if (speedTimer > 0)
+        {
+            speedTimer -= Time.deltaTime;
         }
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Block"))
         {
-            Rebound(other);
+            if (!(transperceTimer > 0 && other.gameObject.CompareTag("Block")))
+            {
+                Rebound(other);
+            }
+            Debug.Log("Timer " + other.gameObject.name);
             hasHit = true;
         }
 
