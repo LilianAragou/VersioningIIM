@@ -28,7 +28,8 @@ public class CollideBonus : MonoBehaviour
         }
         else if (ID == -3) //Balle qui clignote (disparaît) (5sec)
         {
-
+            foreach (var pizza in FindObjectsOfType<Pizza>())
+                pizza.gameObject.GetComponent<Pizza>().spriteTimer = 5f;
         }
     }
     private void OnCollisionEnter2D(Collision2D other)

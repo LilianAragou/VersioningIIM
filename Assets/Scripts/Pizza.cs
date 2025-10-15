@@ -12,9 +12,16 @@ public class Pizza : MonoBehaviour
     public GameObject pizzaObject;
     public float transperceTimer = 0f;
     public float speedTimer = 0f;
+    public float spriteTimer = 0f;
+    private float spriteTimerInterval = 0.5f;
+    private float spriteTimerElapsed = 0f;
+    public SpriteRenderer sprite;
+    public SpriteRenderer[] children;
     void Start()
     {
         ResetPosition();
+        sprite = GetComponent<SpriteRenderer>();
+        children = GetComponentsInChildren<SpriteRenderer>();
     }
     void Update()
     {
@@ -41,6 +48,40 @@ public class Pizza : MonoBehaviour
         {
             speedTimer -= Time.deltaTime;
         }
+        if (spriteTimer > 0)
+        {
+            spriteTimer -= Time.deltaTime;
+            spriteTimerElapsed += Time.deltaTime;
+            if (sprite != null && spriteTimerElapsed >= spriteTimerInterval)
+            {
+                Debug.Log("TOGGLE");
+                sprite.enabled = !sprite.enabled;
+                children = GetComponentsInChildren<SpriteRenderer>();
+                foreach (var child in children)
+                {
+                    if (child != null)
+                    {
+                        child.enabled = sprite.enabled;
+                    }
+                }
+                spriteTimerElapsed = 0f;
+            }
+        }
+        else
+        {
+            if (sprite != null && !sprite.enabled)
+            {
+                sprite.enabled = true;
+                children = GetComponentsInChildren<SpriteRenderer>();
+                foreach (var child in children)
+                {
+                    if (child != null)
+                    {
+                        child.enabled = sprite.enabled;
+                    }
+                }
+            }
+        }
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -62,8 +103,7 @@ public class Pizza : MonoBehaviour
                 AddIngredient(ingredient.ingredientName);
                 ingredient.HandleBonus();
             }
-
-            Destroy(other.gameObject);
+            //other.GetComponent<BlockHP>().TakeDamage(1);
             hasHit = true;
         }
 
