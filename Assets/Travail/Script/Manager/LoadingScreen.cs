@@ -54,6 +54,6 @@ public class LoadingScreen : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("Game", LoadSceneMode.Single);
+        //SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }
 }
