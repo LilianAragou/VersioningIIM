@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      poivron_0: -7414543132534328891
+      poivron_1: 7391134848863471439
+      poivron_2: -125665676392022124
+      poivron_3: 1802628187899781652
+      poivron_4: -8561768686980186957
+      poivron_5: 2367314958624955128
+      poivron_6: -7788252777992848778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

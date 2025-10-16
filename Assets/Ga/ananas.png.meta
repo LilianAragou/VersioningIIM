@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ananas_0: -133482218490710912
+      ananas_1: -4211340029062323555
+      ananas_2: -7805103088790571819
+      ananas_3: 3990304011878299519
+      ananas_4: -2970607185871465327
+      ananas_5: -1781867666348982190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

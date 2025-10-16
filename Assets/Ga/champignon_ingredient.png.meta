@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      champignon_ingredient_0: 5471513432209611505
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cafards_0: 4946738615177355519
+      cafards_1: -2794249064235925621
+      cafards_2: 1191332835037737103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mouche_ingredient_0: -7030444391797298599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

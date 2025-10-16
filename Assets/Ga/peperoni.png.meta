@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      peperoni_0: -7819913188836288671
+      peperoni_1: 6071957665458015291
+      peperoni_2: -2374037892089392934
+      peperoni_3: 1105520160591880898
+      peperoni_4: -8426720475033708516
+      peperoni_5: -922248716386866579
+      peperoni_6: -9131879641425458918
+      peperoni_7: 712555623652355968
+      peperoni_8: -7534894482417512096
+      peperoni_9: 8513232521477299956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cafard_ingredient_0: -2868710122921363025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

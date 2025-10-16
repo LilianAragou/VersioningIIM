@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      persil_0: -8163515858311196246
+      persil_1: 6374662441202270806
+      persil_10: -2270879526295335827
+      persil_11: -1945130170055167862
+      persil_2: -699648239668719424
+      persil_3: -2660803929816893844
+      persil_4: 5124903752290004141
+      persil_5: -793240765102371773
+      persil_6: 4454059329644611700
+      persil_7: 558946323032468770
+      persil_8: 303658261333218012
+      persil_9: -5869691630488137887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

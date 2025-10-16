@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oeuf de 100 ans_0: 8822508185899390133
+      oeuf de 100 ans_1: -66375813099546352
+      oeuf de 100 ans_2: 5029081450950153940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
