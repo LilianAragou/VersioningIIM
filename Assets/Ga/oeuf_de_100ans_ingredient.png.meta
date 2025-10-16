@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oeuf_de_100ans_ingredient_0: -4807729559474947709
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

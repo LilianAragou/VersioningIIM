@@ -434,7 +434,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mozzarella_0: -6412762683731264431
+      mozzarella_1: 3463343359274303882
+      mozzarella_10: 1146325606650034150
+      mozzarella_11: 3433912876612488310
+      mozzarella_12: 6737490695975542336
+      mozzarella_2: -3169909738040102347
+      mozzarella_3: -1095063433980761272
+      mozzarella_4: 999679848431963267
+      mozzarella_5: -4761380776499351697
+      mozzarella_6: -7567689124004998639
+      mozzarella_7: -8171846171414771709
+      mozzarella_8: -8329220422029786238
+      mozzarella_9: 3359702073844980165
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

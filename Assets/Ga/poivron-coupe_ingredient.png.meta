@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      poivron-coupe_ingredient_0: -6295600983146920681
+      poivron-coupe_ingredient_1: 8022995829768283096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

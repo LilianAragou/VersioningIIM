@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      poisson_pourris_ingredient_0: 2714768397856654375
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

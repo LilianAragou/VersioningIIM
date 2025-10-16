@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      salade_coupee_persil_ingredient_0: 8370556770762233599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

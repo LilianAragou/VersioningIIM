@@ -88,15 +88,23 @@ public class Pizza : MonoBehaviour
         direction = new Vector2(0, -1).normalized;
         hasHit = false;
     }
+
     void Rebound(Collision2D other)
     {
         Vector2 normal = other.contacts[0].normal;
-        direction = Vector2.Reflect(direction, normal).normalized;
         if (other.gameObject.CompareTag("Player"))
         {
-            direction.x += 0.5f * (transform.position.x - other.gameObject.GetComponent<Transform>().position.x);
+            float hitX = (transform.position.x - other.transform.position.x) / (other.collider.bounds.size.x / 2f);
+            float angle = hitX * 60f * Mathf.Deg2Rad;
+            direction = new Vector2(Mathf.Sin(angle), Mathf.Cos(angle)).normalized;
+        }
+        else
+        {
+            direction = Vector2.Reflect(direction, normal).normalized;
         }
     }
+
+
     private IEnumerator RespawnPizza(float delay)
     {
         SpriteRenderer sr = GetComponent<SpriteRenderer>();

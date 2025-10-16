@@ -148,4 +148,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientName: Poivron
-  bonusPrefab: {fileID: 5088108970550581221, guid: 4840372cd88d9bb47ad7cef707e0d175, type: 3}
+  bonusPrefab: {fileID: 0}
