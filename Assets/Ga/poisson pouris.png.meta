@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      poisson pouris_0: 6312051534451859797
+      poisson pouris_1: 5085450680101035040
+      poisson pouris_2: -2528742629048551438
+      poisson pouris_3: 8179615284934714082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
