@@ -16,12 +16,12 @@ public class LoadingScreen : MonoBehaviour
         loadingBarFill.fillAmount = 0f;
     }
 
-    public void LoadScene()
+    public void LoadScene(string name)
     {
-        StartCoroutine(LoadSceneAsync());
+        StartCoroutine(LoadSceneAsync(name));
     }
 
-    IEnumerator LoadSceneAsync()
+    IEnumerator LoadSceneAsync(string name)
     {
         loadingBar.SetActive(true);
         loadingScreen.SetActive(true);
@@ -54,6 +54,6 @@ public class LoadingScreen : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("Level1", LoadSceneMode.Single);
+        SceneManager.LoadScene(name, LoadSceneMode.Single);
     }
 }

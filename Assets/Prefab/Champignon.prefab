@@ -147,5 +147,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6551e938e54bf349b8fa558ded8e506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientName: Salade
+  ingredientName: Champignon
   bonusPrefab: {fileID: 0}

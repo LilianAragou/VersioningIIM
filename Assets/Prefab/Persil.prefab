@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5619423596182412945}
   - component: {fileID: 587859406982935371}
   m_Layer: 0
-  m_Name: Basilic
+  m_Name: Persil
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.61, y: 0.81}
+    oldSize: {x: 0.87142855, y: 1.1571429}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

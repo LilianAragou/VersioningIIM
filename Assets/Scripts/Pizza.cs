@@ -12,6 +12,7 @@ public class Pizza : MonoBehaviour
     public GameObject pizzaObject;
     public float transperceTimer = 0f;
     public float speedTimer = 0f;
+    public SpriteRenderer[] children;
     void Start()
     {
         ResetPosition();
@@ -107,17 +108,30 @@ public class Pizza : MonoBehaviour
 
     private IEnumerator RespawnPizza(float delay)
     {
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
         Collider2D col = GetComponent<Collider2D>();
 
-        if (sr != null) sr.enabled = false;
+        SetRenderersActive(false);
         if (col != null) col.enabled = false;
 
         yield return new WaitForSeconds(delay);
 
         ResetPosition();
 
-        if (sr != null) sr.enabled = true;
+        SetRenderersActive(true);
         if (col != null) col.enabled = true;
+    }
+
+    void SetRenderersActive(bool active)
+    {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null) sr.enabled = active;
+
+        children = GetComponentsInChildren<SpriteRenderer>();
+
+        foreach (var child in children)
+        {
+            if (child != sr)
+                child.enabled = active;
+        }
     }
 }

@@ -20,11 +20,11 @@ public class GameManager : MonoBehaviour
     {
         if (win)
         {
-            Debug.Log("You Win!");
+            SoundManager.Instance.PlayWin();
         }
         else
         {
-            Debug.Log("Game Over!");
+            SoundManager.Instance.PlayLose();
         }
     }
 
@@ -38,6 +38,10 @@ public class GameManager : MonoBehaviour
         if (life <= 0)
         {
             GameOver(false);
+        }
+        if (GameObject.FindGameObjectsWithTag("Block").Length == 0)
+        {
+            GameOver(true);
         }
     }
 }

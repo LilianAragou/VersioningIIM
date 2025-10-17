@@ -2624,7 +2624,7 @@ PrefabInstance:
     - target: {fileID: 591843306275233176, guid: 0f006034c64da544790e124bc895bb19, type: 3}
       propertyPath: bonusPrefab
       value: 
-      objectReference: {fileID: 5088108970550581221, guid: 4840372cd88d9bb47ad7cef707e0d175, type: 3}
+      objectReference: {fileID: 5088108970550581221, guid: 4b7008e15ea0c604c8a4612a73e8f982, type: 3}
     - target: {fileID: 3969798108642454195, guid: 0f006034c64da544790e124bc895bb19, type: 3}
       propertyPath: m_Name
       value: Poivron
