@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      brique ronde_0: -2881118295576647707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

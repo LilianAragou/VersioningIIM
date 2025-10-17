@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: a12ab73471501a54498d928d1c77ff9b
+guid: 689ca40041d25e24db0ceb34876ac2e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8087249663453153620
-    second: jauge temps 1_0
+      213: -792435924734940572
+    second: barre de vie pleine_0
+  - first:
+      213: 3122422266608004997
+    second: barre de vie pleine_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jauge temps 1_0
+      name: barre de vie pleine_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 10
-        width: 67
-        height: 469
+        x: 57
+        y: 185
+        width: 8
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca63af7774154cf80800000000000000
-      internalID: -8087249663453153620
+      spriteID: 46a6ae699b3b005f0800000000000000
+      internalID: -792435924734940572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barre de vie pleine_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 8
+        width: 135
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58fa0f71282155b20800000000000000
+      internalID: 3122422266608004997
       vertices: []
       indices: 
       edges: []
@@ -134,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      jauge temps 1_0: -8087249663453153620
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
