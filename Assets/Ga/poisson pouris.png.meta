@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: 6312051534451859797
     second: poisson pouris_0
+  - first:
+      213: 5085450680101035040
+    second: poisson pouris_1
+  - first:
+      213: -2528742629048551438
+    second: poisson pouris_2
+  - first:
+      213: 8179615284934714082
+    second: poisson pouris_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,10 +112,10 @@ TextureImporter:
       name: poisson pouris_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 380
-        height: 349
+        x: 156
+        y: 273
+        width: 30
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +126,72 @@ TextureImporter:
       bones: []
       spriteID: 55166fa8d69e89750800000000000000
       internalID: 6312051534451859797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poisson pouris_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 201
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02cd03e1376239640800000000000000
+      internalID: 5085450680101035040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poisson pouris_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 117
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f77c2b0af918ecd0800000000000000
+      internalID: -2528742629048551438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poisson pouris_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 68
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2a3e1a3c4d38170800000000000000
+      internalID: 8179615284934714082
       vertices: []
       indices: 
       edges: []
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      poisson pouris_0: 6312051534451859797
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
