@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,21 +17,28 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
     }
-    public void GameOver(bool win)
+    private void Start()
     {
-        if (win)
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Win")
         {
             SoundManager.Instance.PlayWin();
         }
-        else
+        else if (scene.name == "Death")
         {
             SoundManager.Instance.PlayLose();
         }
     }
-
-    void Start()
+    public void GameOver(bool win)
     {
-
+        if (win)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            SceneManager.LoadScene("Death");
+        }
     }
 
     void Update()

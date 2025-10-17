@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lvl 4.unity
     guid: 43265d78b617c8d43bba338483713572
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: db60c465fee029d48951de180250ecfd
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: e65556b4cb62fcd45bb611eb41e3358d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

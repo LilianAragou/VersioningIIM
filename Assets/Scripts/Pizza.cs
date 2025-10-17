@@ -63,7 +63,7 @@ public class Pizza : MonoBehaviour
                 AddIngredient(ingredient.ingredientName);
                 ingredient.HandleBonus();
             }
-
+            TimerManager.Instance.AddTimer(5f);
             Destroy(other.gameObject);
             hasHit = true;
         }

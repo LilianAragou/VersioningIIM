@@ -13,7 +13,7 @@ public class CollideBonus : MonoBehaviour
         else if (ID == 1) //Jauge de faim bloquée (5sec)
         {
             SoundManager.Instance.PlayBonus();
-            //HungerBar.Instance.FreezeTimer(5f);
+            TimerManager.Instance.AddTimer(5f);
         }
         else if (ID == 2) //Pizza transperçante (5 sec)
         {
