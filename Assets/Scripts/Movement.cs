@@ -50,13 +50,13 @@ public class Movement : MonoBehaviour
         transform.Translate(Vector2.right * moveDirection * currentSpeed * Time.deltaTime);
         if (sizeTimer > 0)
         {
-            transform.localScale = new Vector3(1.5f, 0.3f, 1f);
+            transform.localScale = new Vector3(0.3f, 0.45f, 1f);
             sizeTimer -= Time.deltaTime;
 
         }
         if (sizeTimer <= 0)
         {
-            transform.localScale = new Vector3(2.5f, 0.5f, 1f);
+            transform.localScale = new Vector3(0.4f, 0.6f, 1f);
         }
     }
     public void ReduceSize(float duration)

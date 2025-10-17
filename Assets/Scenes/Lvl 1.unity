@@ -1579,6 +1579,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4576828553751899266, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
+      propertyPath: m_Size.x
+      value: 6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576828553751899266, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
+      propertyPath: m_Size.y
+      value: 0.57428837
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576828553751899266, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.15250188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576828553751899266, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 6.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576828553751899266, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602058052504200886, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602058052504200886, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5602058052504200886, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1619,6 +1647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5831812965926692332, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b71d22235d91499409e875431eefd3e9, type: 3}
     - target: {fileID: 7616696674154434185, guid: 7f49951dd591d1f449e9f7aa9a6266bd, type: 3}
       propertyPath: m_Name
       value: Player
