@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      barre de vie pleine_0: -792435924734940572
+      barre de vie pleine_1: 3122422266608004997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
